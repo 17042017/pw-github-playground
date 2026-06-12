@@ -1,0 +1,27 @@
+# Dependencies
+node_modules/
+
+# Environment
+.env
+.env.local
+
+# Generated reports & artifacts
+reports/
+test-results/
+playwright-report/
+blob-report/
+.allure/
+allure-results/
+allure-report/
+
+# Playwright
+/playwright/.cache/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS / editor
+.DS_Store
+.idea/
+*.swp

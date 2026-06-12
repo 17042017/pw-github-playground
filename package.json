@@ -1,0 +1,38 @@
+{
+  "name": "pw-github-playground",
+  "version": "1.0.0",
+  "description": "Production-ready Playwright + TypeScript UI + API hybrid automation framework (RealWorld Conduit) with Allure, HTML and Trace Viewer reporting.",
+  "type": "module",
+  "scripts": {
+    "test": "playwright test",
+    "test:ui": "playwright test tests/ui",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "report:html": "playwright show-report reports/html",
+    "trace": "playwright show-trace",
+    "allure:generate": "allure generate reports/allure-results -o reports/allure-report --clean",
+    "allure:open": "allure open reports/allure-report",
+    "allure:serve": "allure serve reports/allure-results",
+    "typecheck": "tsc --noEmit",
+    "pw:install": "playwright install --with-deps"
+  },
+  "keywords": [
+    "playwright",
+    "typescript",
+    "automation",
+    "api-testing",
+    "allure",
+    "pom"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.49.0",
+    "@types/node": "^22.10.0",
+    "allure-commandline": "^2.32.0",
+    "allure-playwright": "^3.0.0",
+    "typescript": "^5.7.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "zod": "^3.24.0"
+  }}
