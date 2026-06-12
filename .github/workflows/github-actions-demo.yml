@@ -1,1 +1,18 @@
+name: GitHub Actions 
+on: 
+    schedule:
+        -cron: '0 12 12 6 2026'
+    workflow_dispatch:
+
+jobs: 
+    build:
+        runs-on: windows-latest
+        steps:
+            -name: Checkout Code
+            -uses: checkout@v6
+            -run: echo "Hello, World!"
+
+
+
+
 

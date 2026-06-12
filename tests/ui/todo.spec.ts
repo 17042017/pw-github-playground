@@ -47,5 +47,6 @@ test.describe('TodoMVC (UI)', () => {
 
     await todoPage.expectCount(1);
     expect(await todoPage.titles()).toEqual(['stay']);
+    await(500);
   });
 });
